@@ -22,10 +22,10 @@ class Entity
     //initializes the entity with given position, velocity, and health
     void init(float x, float y, float vx, float vy, int health);
     
-    bool Entity::isDead() const; //checks if the entity is dead
-    float Entity::getX() const; //gets X pos of entity
-    float Entity::getY() const; //gets Y pos of entity
-    int Entity::getHealth() const; //gets health of entity
+    bool isDead() const; //checks if the entity is dead
+    float getX() const; //gets X pos of entity
+    float getY() const; //gets Y pos of entity
+    int getHealth() const; //gets health of entity
 
     private:
         float x_;
