@@ -19,7 +19,7 @@
         EntityPool();
         ~EntityPool();
 
-        //acquire an objects - returns a pointer or nullptr if pool is full
+        //acquire objects - returns a pointer or nullptr if pool is full
         T* acquire();
 
         void release(T* object); //Release an object - calls destructor and recycles storage
@@ -44,4 +44,5 @@
         
  };
 
+#include "EntityPool.inl"
 #endif // ENTITY_POOL_H
